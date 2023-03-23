@@ -1,6 +1,4 @@
-/*eslint-disable*/
 import { ErrorMessage, Field, useField } from 'formik';
-import { PersistFormikValues } from 'formik-persist-values';
 
 const TextField = ({ label, ...props }) => {
   const [field, meta] = useField(props);

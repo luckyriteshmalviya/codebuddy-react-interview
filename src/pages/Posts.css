@@ -1,0 +1,81 @@
+.post-container {
+  display: grid;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 1rem;
+  gap: 1.5rem;
+  padding: 2.5rem;
+  margin: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.post {
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 1rem;
+  letter-spacing: 0.1rem;
+  box-shadow: 2px 3px 6px 0px rgb(161, 161, 161);
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post:hover {
+  box-shadow: none;
+  background-color: rgb(243, 243, 243);
+}
+.post-image {
+  width: 12.5rem;
+  object-fit: contain;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-writeup {
+  text-align: left;
+}
+
+.post-avatar {
+  width: 8rem;
+}
+
+@media screen and (max-width: 420px) {
+  .post-container {
+    grid-template-columns: 1fr;
+  }
+
+  .post {
+    padding: 0.5rem;
+  }
+
+  .post-image {
+    width: 8.5rem;
+    object-fit: contain;
+  }
+
+  .post-avatar {
+    width: 5rem;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 920px) {
+  .post-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .post {
+    padding: 0.5rem;
+  }
+  .post-image {
+    width: 8.5rem;
+    object-fit: contain;
+  }
+
+  .post-avatar {
+    width: 5rem;
+  }
+}
